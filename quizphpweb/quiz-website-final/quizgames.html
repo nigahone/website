@@ -1,0 +1,294 @@
+<!-- This is the final projeect publish page where people can see the questions you made -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Quizzes | Quiz Games</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .cta-button {
+            background: #FFC107;
+            color: #333;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #FFA000;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: #e9ecef;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            width: 30%;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: #007BFF;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .quiz-section {
+            padding: 2rem;
+        }
+
+        .quiz-container {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .quiz-container h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #007BFF;
+        }
+
+        .question {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 0.5rem;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .result {
+            display: none;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .result.correct {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .result.incorrect {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Minimalistic styling for learning resources */
+        .learn-section {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .learn-section h2 {
+            color: #007BFF;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .resource-card h3 {
+            font-size: 1.2rem;
+            color: #007BFF;
+        }
+
+        .resource-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .resource-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Quiz Games</h1>
+    <p>Create, Play, and Learn with Interactive Quizzes</p>
+    <a href="#quiz-section" class="cta-button">Start Your Journey</a>
+</header>
+
+<section class="features">
+    <div class="feature-card">
+        <h3>Create Quizzes</h3>
+        <p>Design your own quizzes with our intuitive drag-and-drop editor.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Explore Topics</h3>
+        <p>Dive into various topics and test your knowledge with exciting quizzes.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Track Progress</h3>
+        <p>Monitor your learning progress with real-time analytics.</p>
+    </div>
+</section>
+
+<section id="quiz-section" class="quiz-section">
+    <div class="quiz-container">
+        <h2>Quiz: General Knowledge</h2>
+        <p class="question">1. What is the capital of France?</p>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="correct"> Paris</li>
+            <li><input type="radio" name="q1" value="incorrect"> Madrid</li>
+            <li><input type="radio" name="q1" value="incorrect"> Rome</li>
+            <li><input type="radio" name="q1" value="incorrect"> Berlin</li>
+        </ul>
+        <a href="#" class="btn" onclick="checkAnswer('q1', 'correct', this); return false;">Submit Answer</a>
+        <div class="result correct">Correct! Well done!</div>
+        <div class="result incorrect">Incorrect. Try again!</div>
+    </div>
+
+    <div class="quiz-container">
+        <h2>Quiz: Science & Technology</h2>
+        <p class="question">2. Which planet is known as the Red Planet?</p>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="incorrect"> Earth</li>
+            <li><input type="radio" name="q2" value="correct"> Mars</li>
+            <li><input type="radio" name="q2" value="incorrect"> Jupiter</li>
+            <li><input type="radio" name="q2" value="incorrect"> Venus</li>
+        </ul>
+        <a href="#" class="btn" onclick="checkAnswer('q2', 'correct', this); return false;">Submit Answer</a>
+        <div class="result correct">Correct! Well done!</div>
+        <div class="result incorrect">Incorrect. Try again!</div>
+    </div>
+</section>
+
+<section class="learn-section">
+    <h2>Learn with Our Resources</h2>
+
+    <div class="resource-card">
+        <h3>Resource 1: History of Europe</h3>
+        <p>Explore the rich history of Europe with detailed articles and interactive timelines.</p>
+        <a href="#">Read More</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>Resource 2: Basics of Astronomy</h3>
+        <p>Understand the fundamentals of astronomy and explore the wonders of the universe.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>Resource 3: Introduction to Programming</h3>
+        <p>Get started with programming through our step-by-step tutorials and exercises.</p>
+        <a href="#">Start Learning</a>
+    </div>
+</section>
+
+<script>
+    function checkAnswer(questionName, correctValue, btn) {
+        const options = document.getElementsByName(questionName);
+        let selectedValue;
+        options.forEach(option => {
+            if (option.checked) {
+                selectedValue = option.value;
+            }
+        });
+
+        const correctResult = btn.nextElementSibling;
+        const incorrectResult = correctResult.nextElementSibling;
+
+        if (selectedValue === correctValue) {
+            correctResult.style.display = 'block';
+            incorrectResult.style.display = 'none';
+        } else {
+            correctResult.style.display = 'none';
+            incorrectResult.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

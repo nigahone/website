@@ -1,0 +1,1308 @@
+
+/* Imported cdn for icons from font-awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+.generated-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.generated-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+/* Light Mode (default) */
+:root {
+    /* --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a0dab; */
+
+
+
+    --primary-links: #007BFF;
+    --primary-action : #FFC107;
+    --secondary-neutral : #FFFFFF;
+    --secondary-soft : #F4F4F4;
+    --secondary-strong: #333333;
+    --accent-hover : #87CEFA;
+    --accent-interactive : #FF6F61;
+    --text-primary : #000000;
+    --text-secondary : #555555;
+    --background-gentle : #E9ECEF;
+    --background-off-White : #F8F9FA;
+    --button-background : #007BFF;
+    --button-hover : #0056b3;
+    --button-text : #FFFFFF;
+    --button-active : #0056b3;
+    --sbutton-background : #FFC107;
+    --sbutton-hover : #FFA000;
+    --sbutton-text : #333333;
+    --sbutton-active : #e0a800;
+    --pbutton-shadow: #007BFF;
+    --sbutton-shadow: #FFC107;
+    --yellow: #b0f6f6;
+    --back-yellow: #cffcfc7e;
+    --login-background : #ffc107;
+    --navbar-links: #007BFF;
+
+/* 
+    --yellow: #9cf6f6;
+    --darkred: #99221e;
+    --border: rgba(0, 0, 0, 0.3);
+    --scroll-col: green;
+    --scroll-hov: red; */
+}
+/* Yellow-money/purchase red-danger Green-safe Blue-link */
+
+/* Dark Mode */
+body.dark-mode {
+    --primary-links: #1E2A38;
+    --primary-action : #FFC107;
+    --secondary-neutral : #555555;
+    --secondary-soft : #333333;
+    --secondary-strong: #121212;
+    --accent-hover : #00BFFF;
+    --accent-interactive : #FF6F61;
+    --text-primary : #FFFFFF;
+    --text-secondary : #E0E0E0;
+    --background-gentle : #1C1C1C;
+    --background-off-White : #2C2C2C;
+    --button-background : #FFC107;
+    --button-hover : #FFA000;
+    --button-text : #121212;
+    --button-active : #e0a800;
+    --sbutton-background : #1E2A38;
+    --sbutton-hover : #00BFFF;
+    --sbutton-text : #FFFFFF;
+    --sbutton-active : #1a202c;
+    --pbutton-shadow: rgba(255, 255, 255, 0.1);
+    --sbutton-shadow: rgba(117, 115, 115, 0.05);
+    --yellow: #007c7c;
+    --back-yellow: #00696946;
+    --login-background : #b0aeae;
+    --navbar-links: #007BFF;
+
+    /* --background-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #bb86fc;
+    --primary-color-blue: #007BFF;
+    --primary-color-yellow: #FFC107;
+    --yellow: #5abdbd;
+    --darkred: #661716;
+    --border: rgba(255, 255, 255, 0.3);
+    --scroll-col: green;
+    --scroll-hov: red; */
+}
+/* 
+Light Mode !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Primary Colors:
+Blue (#007BFF): A vibrant and trustworthy color, ideal for buttons, links, and important elements.
+Yellow (#FFC107): A bright and cheerful accent color, perfect for call-to-action buttons or highlights.
+
+Secondary Colors:
+White (#FFFFFF): A clean and neutral background color, maintaining a minimalistic look.
+Light Gray (#F4F4F4): A soft gray for subtle backgrounds or sections to differentiate content without overwhelming the user.
+Dark Gray (#333333): A strong, readable color for text and icons, providing excellent contrast against lighter backgrounds.
+
+Accent Colors:
+Sky Blue (#87CEFA): A lighter blue for secondary elements like hover effects or less prominent buttons.
+Soft Coral (#FF6F61): A warm and inviting color, great for notifications, badges, or interactive elements.
+
+Text Colors:
+Dark Gray (#555555): Slightly lighter than the main text color, perfect for secondary text or less important information.
+Black (#000000): For the most important text elements, ensuring maximum readability.
+
+Background Colors:
+Light Blue (#E9ECEF): A soft blue for background sections to provide a gentle contrast with the white main background.
+Off-White (#F8F9FA): An off-white color to soften the overall appearance, making the site feel more inviting and less stark.
+
+Button Colors:
+Primary Button:
+
+Background: Blue (#007BFF)
+Hover: Darker Blue (#0056b3)
+Text: White (#FFFFFF)
+Secondary Button:
+
+Background: Yellow (#FFC107)
+Hover: Orange (#FFA000)
+Text: Dark Gray (#333333)
+
+Overall Palette Example:
+Primary: Blue (#007BFF), Yellow (#FFC107)
+Secondary: Light Gray (#F4F4F4), Dark Gray (#333333)
+Accent: Sky Blue (#87CEFA), Soft Coral (#FF6F61)
+
+Dark Mode !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Primary Colors:
+Deep Blue (#1E2A38): A rich, dark blue that can serve as the primary background color, replacing the lighter blue tones from the light mode.
+Bright Yellow (#FFC107): This bright accent color can remain the same, as it contrasts well against darker backgrounds.
+Secondary Colors:
+Off-Black (#121212): A very dark shade for the main background, providing a strong contrast with the text and other elements.
+Charcoal Gray (#333333): A dark gray for sections and containers, offering a subtle contrast against the main background.
+Medium Gray (#555555): For secondary text and icons, ensuring readability without overpowering the overall design.
+Accent Colors:
+Cyan Blue (#00BFFF): A vivid cyan for hover effects or interactive elements, adding a pop of color against the dark background.
+Soft Coral (#FF6F61): This warm accent color continues to work well in dark mode for notifications or badges.
+Text Colors:
+Light Gray (#E0E0E0): For body text, ensuring high readability against dark backgrounds.
+White (#FFFFFF): For headings, key text, and buttons to provide strong contrast and focus.
+Background Colors:
+Dark Slate (#1C1C1C): A dark, muted gray for background sections, giving a subtle texture without distracting from the content.
+Dark Charcoal (#2C2C2C): A slightly lighter gray for differentiating content sections within the dark mode.
+Button Colors:
+Primary Button:
+
+Background: Bright Yellow (#FFC107)
+Hover: Orange (#FFA000)
+Text: Off-Black (#121212)
+Secondary Button:
+
+Background: Deep Blue (#1E2A38)
+Hover: Cyan Blue (#00BFFF)
+Text: White (#FFFFFF)
+Overall Dark Mode Palette Example:
+Primary: Deep Blue (#1E2A38), Bright Yellow (#FFC107)
+Secondary: Off-Black (#121212), Charcoal Gray (#333333)
+Accent: Cyan Blue (#00BFFF), Soft Coral (#FF6F61)
+Text: Light Gray (#E0E0E0), White (#FFFFFF)
+Background: Dark Slate (#1C1C1C), Dark Charcoal (#2C2C2C)
+
+
+font size 
+30px 2rem
+30px 2rem
+30px 2rem
+30px 2rem
+30px 2rem
+30px 2rem
+50px 2rem
+45px 2rem
+40px 2rem
+35px 2re
+30px 2rem
+27px 1.9rem
+24px 1.8rem
+21px 1.7rem
+18px 1.6rem
+15px 1.5rem
+12px 1.4rem
+14px 0.9rem
+12px 0.8rem
+11px 0.8rem
+10px 0.8rem
+for the sections title 2.5rem
+
+*/
+/* Apply the colors */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--secondary-neutral);
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--button-background);
+}
+a:hover {
+    color: var();
+}
+
+/* button {
+    background-color: var(--sbutton-background);
+    color: var(--sbutton-text);
+}
+button:hover {
+    background-color: var(--sbutton-hover);
+} */
+
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+}
+button:hover {
+    background-color: var(--button-hover);
+}
+button:active {
+    background-color: var(--button-active);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li , ul{
+    list-style-type: none;
+}
+
+/* Call to Action Buttons Styles */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--button-text);
+    background-color: var(--button-background);/* Vibrant red-orange color */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 10px var(--pbutton-shadow); /* Soft shadow */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.cta-button:hover {
+    background-color: var(--button-hover); /* Lighter shade on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active Effects */
+.cta-button:active {
+    background-color: var(--button-hover); /* Slightly darker when active */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Reset shadow */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Additional Styling */
+.cta-button span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.cta-button .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow Animation */
+.cta-button:hover .arrow {
+    transform: translateX(5px); /* Slight arrow move on hover */
+}
+
+
+
+
+/* Basic styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Adjusted from 'top: 100' to 'top: 0' */
+    z-index: 100;
+    background-color: var(--secondary-soft); /* Background color */
+    border-bottom: 2px solid var(--sbutton-shadow); /* Border color */
+}
+
+.navbar-sec ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-sec ul li {
+    margin-right: 20px;
+}
+
+.navbar-sec ul li a {
+    color: var(--navbar-links); /* Link color */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+.navbar-sec ul li a:hover {
+    /* transform: scale(1.9); */
+    font-size: 13.5px;
+    /* background-color: red; */
+}
+
+.dmode button {
+    background: none;
+    border: none;
+    color: var(--text-primary); /* Dark mode button color */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-reg .btn {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: var(--sbutton-background); /* Secondary button background */
+    border: none;
+    color: var(--sbutton-text); /* Button text color */
+    cursor: pointer;
+    box-shadow: 0 2px 5px var(--sbutton-shadow); /* Button shadow */
+}
+
+.login-reg .btn:hover {
+    background-color: var(--sbutton-hover); /* Secondary button hover color */
+}
+
+.mobile-menu-icon {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    color: var(--text-primary); /* Icon color */
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-sec ul {
+        display: none; /* Hide the nav links */
+        flex-direction: column;
+        background-color: var(--secondary-soft); /* Background color for dropdown */
+        position: absolute;
+        top: 60px; /* Adjust according to your navbar height */
+        left: 0;
+        right: 0;
+        padding: 10px;
+        border-top: 2px solid var(--sbutton-shadow); /* Border color */
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* Hidden by default */
+    }
+
+    .navbar-sec ul.active {
+        transform: translateY(0); /* Slide down */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Show the menu button on mobile view */
+    }
+}
+
+/* Add hover effects */
+.navbar-sec ul li a:hover {
+    color: var(--accent-hover); /* Change color on hover */
+}
+
+.login-reg .btn:active {
+    background-color: var(--sbutton-active); /* Active button color */
+    box-shadow: 0 2px 5px var(--sbutton-shadow); /* Shadow */
+}
+
+/* The hamburger icon for mobile view */
+.logo h3 img{
+    /* font-size: 12px;
+    font-weight: 900; */
+    height: 56px;
+    width: auto;
+}
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 400px;
+    
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    outline: none;
+    background-color: var(--background-off-White);
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.search-button {
+    background-color: #007bff00;
+    border: none;
+    /* color: white; */
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    color: var(--secondary-neutral);
+    font-size: 1.3rem;
+    /* font-weight: 100; */
+    transition: color 0.3s;
+}
+
+.search-button i:hover {
+    /* background-color: #0026ff2d; */
+    color: #9cf6f6;
+}
+.dark-mode #theme-toggle{
+    /* background-color: var(--secondary-neutral); */
+    background-color: var(--secondary-soft);
+    color: var(--text-primary);
+    border: none;
+    /* font-size: 1.3rem; */
+    /* background-color: red;
+    color: blue; */
+}
+
+.login-reg{
+    display: inline-flex;
+    background-color: #f0f0f0;
+    border-radius: 25px; /* Makes the edges rounded */
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.btn {
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded edges for the buttons */
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #333;
+}
+
+.btn .register {
+    background-color: white; /* Highlights the register button */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #e0e0e0; /* Adds a hover effect */
+    /* color: var(--background-color); Adds a hover effect
+    background-color: var(--text-color); */
+}
+.login-reg:hover {
+    background-color: transparent;
+    color: #333;/*
+    color: var(--background-color);  Adds a hover effect
+    background-color: var(--text-color); */
+}
+
+.btn.login {
+    /* background-color: var(--link-color);
+    color: var(--text-color); */
+    background-color: var(--login-background);
+    color: #333;
+}
+
+.navbar-sec {
+    /* padding: 100px 50px 0px 50px; */
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar-sec a {
+    color: var(--text-primary);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.nav-links {
+    display: flex;
+    gap: 1.6rem;
+}
+.nav-links a:hover {
+    color: var(--button-hover);
+}
+.hero {
+    padding: 100px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.hero-left, .hero-right {
+    flex: 1;
+    padding: 20px;
+}
+.hero-left {
+    background-color: var(--secondary-neutral);
+}
+.hero-left h3 {
+    font-size: 0.8rem;
+    padding: 10px 0px 10px 8px;
+}
+.hero-right {
+    text-align: center;
+}
+.hero-right img {
+    height: 44vw;
+    width: auto;
+    filter: drop-shadow(2px 4px 6px rgb(225, 191, 66));
+}
+#categories {
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#title-nav {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    padding: 100px 50px 0px 50px;
+    width: 100%; /* Ensures the title spans the full width */
+    text-align: center; /* Centers the title horizontally (optional) */
+    margin-bottom: 30px; /* Adds some space between the title and the cards */
+}
+
+#categories .card {
+    display: inline-block;
+    background-color: var(--yellow); /* Light purple background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--sbutton-shadow); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+    margin: 0 15px 30px 15px; /* Space between cards */
+}
+
+#categories .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+#categories .icon {
+    background-color: var(--secondary-neutral); /* White background for the icon */
+    border-radius: 50%; /* Rounded circle for the icon background */
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#categories .icon i {
+    font-size: 2rem;
+    /* font-size: 30px; */
+    color: var(--text-primary);
+}
+
+#categories .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-primary); /* Text color for title */
+    margin-bottom: 5px;
+}
+
+#categories .subtitle {
+    font-size: 14px;
+    color: var(--secondary-strong); /* Lighter color for subtitle */
+}
+
+/* Features Section */
+#features {
+    padding: 60px 20px;
+    background-color: var(--secondary-neutral); /* Light background for contrast */
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 40px;
+}
+
+#features h3 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background: var(--yellow); 
+    box-shadow: 0px 4px 10px var(--sbutton-shadow);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card .icon {
+    font-size: 2rem;
+    color: var(--text-primary); /* Accent color */
+    margin-bottom: 20px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: var(--text-primary );
+    background-color: var(--back-yellow);
+    line-height: 1.6;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* About Us section */
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+} */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+#about-us, #contact-us {
+    padding: 40px 20px;
+    margin: 0 auto;
+    /* max-width: 800px; */
+    background: var(--secondary-neutral);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-us-card, .contact-info {
+    margin-bottom: 20px;
+}
+
+.about-us-card h3, .contact-info h3, .about-values h3, .meet-team h3, .impact-about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #9cf6f6;
+}
+
+.about-us-card p, .contact-info p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.about-values ul, .meet-team ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values li, .meet-team li {
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: #99221e;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.call-to-action h3 {
+    margin: 0;
+}
+
+.go-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    filter: drop-shadow(1px 1px 5px green);
+    border-radius: 5px;
+    transition: filter 2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.go-up a {
+    display: block;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.go-up a img {
+    height: 26px;
+    width: auto;
+    transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.go-up a:hover img {
+    transform: scale(1.1);
+}
+
+.go-up:hover {
+    filter: drop-shadow(2px 2px 10px green);
+    transform: scale(1.05);
+}
+
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.contact-us-footer {
+    background-color: var(--text-primary);
+    color: var(--secondary-neutral);
+}
+
+
+/* Footer Container */
+.logo a h3 {
+    font-size: 18px;
+}
+.footer-container-horizontal {
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 10px;
+    padding: 20px;
+    background-color: var(--text-primary);
+    color: var(--secondary-neutral);
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    background-color: var(--text-primary);
+    color: var(--secondary-neutral);
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Ensure it stays readable on smaller screens */
+}
+.contact-footer h3{
+    padding-top: 6px;
+}
+/* Footer Links */
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section .more {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: var(--secondary-neutral);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: var(--button-background);
+}
+
+/* Social Icons */
+.social-footer {
+    display: flex;
+    padding-top: 10px;
+}
+.social-footer a {
+    margin-right: 10px;
+    color: var(--primary-links)
+}
+
+.social-footer a:hover {
+    color: var(--primary-links);
+}
+
+/* Footer Legal Text */
+.footer-legal {
+    padding-top: 10px;
+    /* background-color: var(--secondary-neutral); */
+    /* text-align: center; */
+    /* font-size: 10px; */
+    /* color: #ccc; */
+}
+.footer-legal h3 {
+    font-size: 10px;
+}
+
+.footer-legal a {
+    color: var(--text-primary);
+}
+
+.footer-legal a:hover {
+    color: var(--primary-links);
+}
+
+/* Specific for Quiz Sectors */
+.quiz-sector-top {
+    display: flex;
+}
+.quiz-sector-top, .quiz-sector-bottom {
+    margin-bottom: 10px;
+}
+
+.quiz-sector-top a {
+    padding: 0px 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+}
+
+
+
+
+/* DashBoard.html */
+/* better use frames to make the frame of navbar-top navbar-left and navbar-right maybe bottom also   */
+.navbar-third {
+    display: flex;
+}
+.navbar-third-right {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+    align-self: center;
+}
+.navbar-third-left {
+    padding: 100px 0px 100px 50px;
+
+}
+.navbar-third-left ul{
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+/* main */
+#dash-main {
+    display: flex;
+}
+
+
+.project-img {
+    padding: 40px;
+    border: 3px solid blue;
+    border-radius: 20px;
+}
+
+
+/* createslide */
+.createslide-main {
+    display: flex;
+}
+.create-slide {
+    padding: 0px 20px 20px 20px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.join {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/* .icons {
+    padding-right: 20px;
+} */
+
+.join button ,.dragable-options{
+    border-radius: 4px;
+    padding: 6px;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px var(--pbutton-shadow);
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.join button:hover {
+    background-color: var(--button-hover); /* Lighter shade on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow */
+    transform: translateY(-1px); /* Lift effect */
+}
+
+/* Active Effects */
+.join button:active {
+    background-color: var(--button-hover); /* Slightly darker when active */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Reset shadow */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Additional Styling */
+.join button span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.join button a{
+    color: var(--button-text);
+}
+.draggable-box {
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 0px 0px 16px 0px;
+    cursor: grab;
+    display : flex;
+    justify-content: space-between;
+}
+.draggable-box:hover {
+    background-color: rgba(75, 81, 244, 0.145);
+}
+.draggable:active {
+    cursor: grabbing;
+}
+.draggable-box i {
+    font-size: 16px;
+    padding-right: 20px;
+}
+.dragable-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-third {
+    width: 200px; /* Fixed width of 100px */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.slide2 {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+}
+main {
+    padding: 50px;
+    /* padding-top: 50px; */
+    display: block;
+    justify-content: center;
+}
+.question {
+    display: flex;
+    font-size: 20px;
+}
+.add-new-slide {
+    display: inline-block;
+    padding: 4px 100px;
+    border: 3px solid rgb(0, 35, 101);
+}
+.createhead {
+    margin-top: 50px;
+}
+
+
+
+/* createslide */
+.createslide-main {
+    display: flex;
+}
+/* .create-slide {
+    padding: 20px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+} */
+.navbar-third {
+    width: 200px; /* Fixed width of 100px */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+}
+.slide2 {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+/* Sidebar Navigation */
+/* .navbar-third-left {
+    width: 250px;
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.navbar-third-left ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.navbar-third-left ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-third-left ul li a:hover {
+    background-color: #495057;
+} */
+
+/* Main Content Area */
+.slide2 {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+
+textarea {
+    width: calc(100% - 20px); /* Adjust the width to fit the container */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: vertical; /* Allow users to resize vertically but not horizontally */
+    min-height: 50px; /* Minimum height to make it easier for multiline input */
+    background-color: #f8f9fa; /* Light background color */
+    color: #495057; /* Text color */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05); /* Soft inner shadow for depth */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: inset 0px 2px 4px rgba(0, 123, 255, 0.25); /* Blue inner shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.ProjectTitle {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+#done-button {
+    position: absolute; /* or fixed, depending on your layout needs */
+    right: 20vw;
+    /* top: 0; Adjust if you need vertical positioning */
+    /* margin-left: 100px; */ /* Remove this if it's not needed */
+    /* z-index: 10000; */
+}
+/* Example CSS for the second options menu */
+.options-menu2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.options-menu2.show {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+
+
+.create-slide {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f1f3f5; /* Light gray background */
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.draggable-box {
+    padding: 10px;
+    background-color: #6c757d; /* Gray background */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: grab;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question h2 {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.answers-1 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+/* .answer-input {
+    margin-left: 100px;
+    background-color: red;
+} */
+.answers-2 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.facts-des h3 {
+    font-size: 16px;
+    color: #007BFF; /* Blue text */
+}
+
+.facts-des h4 {
+    font-size: 14px;
+    color: #495057; /* Gray text */
+}
+
+.add-new-slide {
+    font-size: 24px;
+    color: #007BFF; /* Blue plus sign */
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.1s;
+}
+
+.add-new-slide:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.add-new-slide:active {
+    transform: translateY(2px); /* Pressed effect */
+}
+
+.answer-input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness For tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+    .header {
+        text-align: center;
+    }
+    .content {
+        padding: 10px;
+    }
+}
+
+
+
+ /* The scrollbar itself */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* The part of the scrollbar that moves (the thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-neutral); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid var(--pbutton-shadow); /* Adds a border around the thumb */
+    transition: all 0.2s ease-in-out;
+}
+
+/* The track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: var(--background-gentle); /* Color of the track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.9);
+    background: var(--secondary-neutral);
+    box-shadow: 0 0 5px var(--button-text);
+    border: 2px solid var(--secondary-strong);
+    padding: 0px 2px;
+}

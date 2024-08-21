@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Menu</title>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        /* styles.css */
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .options-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .icons {
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            right: 0;
+            /* Aligns the menu to the right of the button */
+            top: 100%;
+            /* Positions the menu below the button */
+        }
+
+        .icons button {
+            display: block;
+            background: none;
+            border: none;
+            padding: 8px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .icons button i {
+            margin-right: 8px;
+        }
+
+        .icons button:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <div class="menu" id="optionsMenu">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+        </div>
+    </div>
+    <div class="menu-container">
+        <button id="optionsButton2" type="button" class="options-btn">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="icons options-menu2" style="display: none;">
+            <button type="button"><i class="fa-solid fa-arrow-rotate-left"> Undo</i></button>
+            <button class="done" id="done-button" type="submit">Done</button>
+            <button type="button"><i class="fa-solid fa-eye"> Preview</i></button>
+        </div>
+    </div>
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">Options</button>
+        <div class="menu" id="optionsMenu">
+            <button type="button"><i class="fa-solid fa-arrow-rotate-left"> Undo</i></button>
+            <button class="done" id="done-button" type="submit">Done</button>
+            <button type="button"><i class="fa-solid fa-eye"> Preview</i></button>
+        </div>
+    </div>
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">Options</button>
+        <div class="menu" id="optionsMenu">
+            <button type="button"><i class="fa-solid fa-arrow-rotate-left"> Undo</i></button>
+            <button class="done" id="done-button" type="submit">Done</button>
+            <button type="button"><i class="fa-solid fa-eye"> Preview</i></button>
+        </div>
+    </div> -->
+    <!-- <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="menu" id="optionsMenu">
+            <button type="button"><i class="fa-solid fa-arrow-rotate-left"> Undo</i></button>
+            <button type="button"><i class="fa-solid fa-eye"> Preview</i></button>
+        </div>
+    </div> -->
+    <div class="menu-container">
+        <button id="optionsButton2" type="button" class="options-btn">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="icons options-menu2" style="display: none;">
+            <button type="button"><i class="fa-solid fa-arrow-rotate-left"> Undo</i></button>
+            <button class="done" id="done-button" type="submit">Done</button>
+            <button type="button"><i class="fa-solid fa-eye"> Preview</i></button>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+        document.getElementById('optionsButton2').addEventListener('click', function () {
+            const menu = document.querySelector('.options-menu2');
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+
+        // Close the menu if the user clicks outside of it
+        window.addEventListener('click', function (event) {
+            const menu = document.querySelector('.options-menu2');
+            const button = document.getElementById('optionsButton2');
+            if (event.target !== button && !button.contains(event.target) && !menu.contains(event.target)) {
+                menu.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
