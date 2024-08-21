@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App | Minimalistic quiz maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h3>
+                    <img src="Quiz Master logo 500px.png" alt="logo of quiz master">
+                </h3>
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search..." pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="dark-mode">
+            <button id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+        <div class="login-reg">
+            <button class="btn login">Login</button>
+            <button class="btn register">Register</button>
+        </div>
+        <!-- 
+        <div class="login-reg">
+            <i class="fa-solid fa-bell"></i>Notifications
+            <button class="btn login">Profile</button>
+        </div>
+         after logged in noifications and profile will appear instead of login and Register -->
+    </div>
+
+    <div class="navbar-sec">
+        <ul class="nav-links">
+            <li>
+                <a href="createslide.html">Start Quiz</a>
+                <!-- <a href="quiz.html">Start Quiz</a> -->
+            </li>
+            <li>
+                <a href="quizgames.html">Quiz Games</a>
+            </li>
+            <li>
+                <a href="#categories">Categories</a>
+            </li>
+            <li>
+                <a href="#features">Features</a>
+            </li>
+            <li>
+                <a href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <main>
+
+        <div class="hero">
+            <div class="hero-left">
+                <h1><span style="color: var(--yellow)">Create</span>, <span
+                        style="color: var(--yellow)">Share</span>,<br> and <span style="color: var(--yellow)">Learn
+                        with</span><br> Engaging <span style="color: var(--yellow)">Quizzes</span>.</h1>
+
+                <h3>Design custom quizzes, challenge your friends,<br> and enhance your knowledge with our interactive
+                    learning platform.</h3>
+                <a href="dashboard.html" class="cta-button">
+                    Create Quiz <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <!-- <a href="#" class="cta-button">
+                    Explore Quizzes <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#" class="cta-button">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a> -->
+                <!-- <button>Create Your First Quiz</button>
+                <br>
+                <button>Explore Quizzes</button>
+                <button>Learn More</button> -->
+            </div>
+            <div class="hero-right">
+                <img src="Quiz Master.png" alt="Play Quiz">
+            </div>
+        </div>
+        <!-- 
+        <div class="hero">
+            <div class="hero-left">
+                <h1>PlayBoi<br>Carti<br>FweAH</h1>
+
+                <h3>Opium as high as f**k<br>Hell, break that thot up<br>B be the highest in thot<br>Then, W there is
+                    nothing<br>nothing in world FweAH!!!</h3>
+                <button>Start Quiz</button>
+                <br>
+                <button>Join From Code</button>
+            </div>
+            <div class="hero-right">
+                <img src="Quiz Master.png" alt="Play Quiz">
+            </div>
+        </div> -->
+
+        <section id="categories">
+            <h2 id="title-nav">Categories</h2>
+            <!-- categorize quizzes by subject, difficulty level, and tags. -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-volleyball"></i>
+                </div>
+                <div class="title">Sports</div>
+                <div class="subtitle">18 Quizzes</div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="title">Science</div>
+                <div class="subtitle">18 Quizzes</div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="title">Art</div>
+                <div class="subtitle">18 Quizzes</div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="title">Education</div>
+                <div class="subtitle">18 Quizzes</div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <div class="title">Politics</div>
+                <div class="subtitle">18 Quizzes</div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="title">Add new</div>
+                <div class="subtitle">? Quizzes</div>
+            </div>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <h3>Why Choose Our Platform?</h3>
+            <div class="features-container">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div class="card-description">
+                        Design quizzes effortlessly with our drag-and-drop editor. Choose from multiple question types,
+                        add images, and provide hints to make your quizzes interactive and engaging.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <div class="card-description">
+                        Share your quizzes with a click. Send them directly to friends, post on social media, or embed
+                        them on your website. Collaboration and learning have never been easier.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="card-description">
+                        Access a rich library of articles, videos, and study guides. Whether you’re preparing for an
+                        exam or exploring new topics, our resources are here to support your learning journey.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <div class="card-description">
+                        Receive tailored content recommendations based on your quiz performance. Our platform adapts to
+                        your needs, helping you focus on areas that matter most.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="card-description">
+                        Gain insights with real-time analytics. Track quiz performance, monitor progress, and identify
+                        areas for improvement to optimize your learning experience.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div class="card-description">
+                        Engage with a vibrant community of learners. Join discussions, exchange ideas, and collaborate
+                        on quizzes. Learning is better together.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="card-description">
+                        Enjoy a seamless experience across all devices. Our platform is optimized for mobile, so you can
+                        create, share, and learn anytime, anywhere.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <div class="card-description">
+                        Save time with our customizable quiz templates. Start with a pre-designed template or create
+                        your own from scratch to suit your unique style.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="card-description">
+                        Your privacy is our priority. We ensure that your data is secure and offer flexible privacy
+                        settings to control who can access your quizzes.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="card-description">
+                        Make learning fun with badges, points, and leaderboards. Earn rewards as you create, share, and
+                        master quizzes, motivating you to keep going.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-us-card">
+                <h3>Our Mission</h3>
+                <p>At [Your Platform Name], our mission is to make learning engaging and accessible for everyone...</p>
+            </div>
+            <div class="about-us-card">
+                <h3>Our Story</h3>
+                <p>Founded in [Year] by [Founders' Names], [Your Platform Name] was born out of a passion for education
+                    and technology...</p>
+            </div>
+            <div class="about-us-card">
+                <h3>What We Offer</h3>
+                <p>We offer a range of features designed to make learning and quiz creation as seamless and enjoyable as
+                    possible...</p>
+            </div>
+            <div class="about-values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Innovation:</strong> We continuously strive to improve and innovate...</li>
+                    <li><strong>Accessibility:</strong> Education should be accessible to everyone...</li>
+                    <li><strong>Community:</strong> We value the power of community...</li>
+                    <li><strong>Integrity:</strong> We are committed to maintaining the highest standards...</li>
+                </ul>
+            </div>
+            <div class="meet-team">
+                <h3>Meet Our Team</h3>
+                <p>Our team is a diverse group of passionate individuals...</p>
+                <ul>
+                    <li><strong>[Name] – Founder & CEO:</strong> With a background in [relevant field]...</li>
+                    <li><strong>[Name] – CTO:</strong> As our Chief Technology Officer...</li>
+                    <li><strong>[Name] – Head of Content:</strong> Responsible for curating and creating educational
+                        content...</li>
+                </ul>
+            </div>
+            <div class="impact-about">
+                <h3>Our Impact</h3>
+                <p>Since launching, we’ve empowered thousands of users to create, share, and learn...</p>
+            </div>
+            <div class="call-to-action">
+                <h3>Ready to get started? Sign up today and explore all the exciting features [Your Platform Name] has
+                    to offer!</h3>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <h2 class="section-title">Contact Us</h2>
+            <p>We’d Love to Hear from You!</p>
+            <p>Whether you have questions, need support, or want to share feedback, our team is here to help.</p>
+            <div class="contact-info">
+                <h3>General Inquiries</h3>
+                <ul>
+                    <li><strong>Email:</strong> info@yourplatform.com</li>
+                    <li><strong>Phone:</strong> 123-456-7890</li>
+                    <li><strong>Address:</strong> 123 Learning Lane, Education City, EC 45678</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="go-up">
+            <a href="#top"><img src="auto-top.png" alt="↑"></a>
+        </div>
+
+    </main>
+    <footer id="contact-us-footer">
+        <div class="footer-container-horizontal">
+            <div class="footer-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <h3>Quiz<br>Master</h3>
+                    </a>
+                </div>
+                <div class="contact-footer">
+                    <h3>#1 Quiz Making and Sharing</h3>
+                    <h3>Contact: +977-9838392322</h3>
+                    <h3>Email: contact@quizmaker.com</h3>
+                </div>
+                <div class="social-footer">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="footer-legal">
+                    <h3>
+                        &copy; 2024 Quiz Maker. All rights reserved.<br>
+                    </h3>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>Home & More</h2>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="Studies.html">Case Studies</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Resources.html">Resources</a>
+                <a href="Partners.html">Partners</a>
+                <a href="Support.html">Customer Support</a>
+            </div>
+            <div class="footer-section">
+                <h2>Product Features</h2>
+                <a href="aboutus.html">Features Overview</a>
+                <a href="Studies.html">Case Studies</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Resources.html">Resources</a>
+                <a href="Partners.html">Partners</a>
+                <a href="Support.html">Customer Support</a>
+                <a href="Sitemap.html">Sitemap</a>
+            </div>
+            <div class="footer-section">
+                <h2>Quiz Library</h2>
+                <a href="Studies.html">Sports</a>
+                <a href="aboutus.html">Science and Technology</a>
+                <!-- <a href="Blog.html">Art</a> -->
+                <!-- <a href="Resources.html">Education</a>
+                <a href="Partners.html">Politics</a>
+                <a href="Support.html">History</a>
+                <a href="Sitemap.html">Cultures</a> -->
+                <h2>View More</h2>
+                <br>
+                <h2>Integration</h2>
+                <div class="quiz-sector-top">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </div>
+                <h2>View More</h2>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

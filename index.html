@@ -4,40 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website</title>
+    <title>E-Commerce Website</title>    
+    <link class="tab-img" rel="icon" href="../profile.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   </head>
 
 <body>
     <header>
         <div class="logos">
             <div class="mainlogo">
-                <h3>Nischal shop</h3>
+                <h3>Kirana<br>shop.</h3>
             </div>
-            <div class="search">search symbol</div>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search..." pattern="[a-zA-Z0-9\s]+"
+                    title="Only letters, numbers and spaces allowed">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
             <div class="basket">
-                <div id="cart"></div>
-                <div id="fav"></div>
-                <div id="pro-log"></div>
+                <div id="cart"><i class="fa-solid fa-cart-shopping"></i>
+                <h3>cart</h3></div>
+                <div id="fav"><i class="fas fa-heart"></i><h3>
+                    favourites
+                </h3></div>
+                <div id="pro-log"><img src="profile.png" alt="image of profile"></div>
             </div>
+        </div>
+        <div id="categories">
+
         </div>
         <div class="categories">
-            <h1>
-                <a href="#clothing">Clothing</a>
-            </h1>
-            <h1>
-                <a href="#clothing">Clothing</a>
-            </h1>
-            <h1>
-                <a href="#clothing">Clothing</a>
-            </h1>
-            <h1>
-                <a href="#clothing">Clothing</a>
-            </h1>
-            <h1>
-                <a href="#clothing">Clothing</a>
-            </h1>
+            <div class="slider">
+                <div class="slide">
+                    <h1><a href="#clothing">Special discount on purchase above $50:-</a></h1>
+                </div>
+                <div class="slide">
+                    <h1><a href="#clothing">Clothing Products under $50</a></h1>
+                </div>
+                <div class="slide">
+                    <h1><a href="#devices">Devices and Accessories</a></h1>
+                </div>
+                <div class="slide">
+                    <h1><a href="#beauty">Beauty Products</a></h1>
+                </div>
+                <div class="slide">
+                    <h1><a href="#food">Food and Drinks</a></h1>
+                </div>
+                <div class="slide">
+                    <h1><a href="#justforyou">Just For You</a></h1>
+                </div>
+            </div>
         </div>
+        <h1 class="categories-text">Categories</h1>
+        <div class="categories-s">
+            <button class="nav-button-s prev-button-s">&#10094;</button>
+            <div class="slider-container-s">
+                <div class="slider-s">
+                    <div class="slide-s" style="background-image: url('profile.png');">
+                        <h1><a href="#clothing">Clothing Products under $50</a></h1>
+                    </div>
+                    <div class="slide-s" style="background-image: url('profile.png');">
+                        <h1><a href="#devices">Devices and Accessories</a></h1>
+                    </div>
+                    <div class="slide-s" style="background-image: url('profile.png');">
+                        <h1><a href="#beauty">Beauty Products</a></h1>
+                    </div>
+                    <div class="slide-s" style="background-image: url('profile.png');">
+                        <h1><a href="#food">Food and Drinks</a></h1>
+                    </div>
+                    <div class="slide-s" style="background-image: url('profile.png');">
+                        <h1><a href="#justforyou">Just For You</a></h1>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-button-s next-button-s">&#10095;</button>
+            <div class="dots-s">
+                <span class="dot-s" data-slide="0"></span>
+                <span class="dot-s" data-slide="1"></span>
+                <span class="dot-s" data-slide="2"></span>
+                <span class="dot-s" data-slide="3"></span>
+                <span class="dot-s" data-slide="4"></span>
+            </div>
+        </div>
+        
+        
         <!-- also add one breadcrumb for navigation ease -->
     </header>
 
@@ -45,7 +97,7 @@
         <div>
             <h1>Trending!!!</h1>
             <div class="h-item">
-                <img src="" alt="image of product">
+                <img src="profile.png" alt="image of product">
                 <div class="highlight">
                     <div class="name">Gucci vest</div>
                     <div class="reviews">
@@ -57,8 +109,7 @@
                         <div class="colors">
                             <h2>Colors : White</h2><!-- white as breadcrumb like indicator-->
                             <div class="image">
-                                <img src=""
-                                    alt="white"><!-- image of color as it is displayed in apple's webite while choosing phone variant or maybe just mockup of the brands-->
+                                <img src="profile.png" alt="white"><!-- image of color as it is displayed in apple's webite while choosing phone variant or maybe just mockup of the brands-->
                             </div>
                         </div>
                     </div>
@@ -73,8 +124,12 @@
                         <div class="del-icon"></div>
                         <h3>Free delivery on orders over $30</h3>
                     </div>
+                    <a href="product-details.html">more details...</a>
                 </div>
             </div>
+        </div>
+        <div class="products">
+            <h1>Quick Shop | For You</h1>
         </div>
     </main>
 
@@ -82,4 +137,9 @@
     <footer>
 
     </footer>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> -->
+
+    <script src="script.js"></script>
 </body>
+</html>

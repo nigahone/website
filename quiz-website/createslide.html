@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Create | Update | Delete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h3>
+                    Quiz<br>Master
+                </h3>
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search..." pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="login-reg">
+            <button class="btn login">Login</button>
+            <button class="btn register">Register</button>
+        </div>
+    </div>
+
+    <div class="navbar-sec">
+        <ul class="nav-links">
+            <li>
+                <a href="quiz.html">Start Quiz</a>
+            </li>
+            <li>
+                <a href="codejoin.html">Quiz code</a>
+            </li>
+            <li>
+                <a href="dashboard.html">dashboard</a>
+            </li>
+            
+        </ul>
+    </div>
+    <main class="createslide-main">
+        <div class="navbar-third">
+            <div class="navbar-third-left">
+                <ul>
+                    <li><a href="dashboard.html">MySlides</a></li>
+                </ul>
+                <ul>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+                <ul>
+                    <li><a href="analytics.html">Analytics</a></li>
+                </ul>
+                <ul>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                </ul>
+                <ul>
+                    <li><a href="integration.html">Integration:</a></li>
+                </ul>
+                <ul>
+                    <li><a href="powerpoint.html">Powerpoint</a></li>
+                </ul>
+                <ul>
+                    <li><a href="googleSlides.html">GoogleSlides</a></li>
+                </ul>
+             </div>
+         </div>
+
+         <div class="slide2">
+            <div class="join">
+                <a href="codejoin.html">join using code </a>
+                <i class="fa-solid fa-arrow-rotate-left"> undo  </i>
+                <i class="fa-solid fa-check"> done  </i>
+                <i class="fa-solid fa-ellipsis-vertical"> options</i>
+                <i class="fa-solid fa-eye"> Preview</i>
+                <!-- Preview mode to test the quiz before publishing. 
+                 Also we may make the items dragable rather than adding + sign below every questions-->
+            </div>
+
+            <!-- on  clicking create a popup box appears and backgound blurs and the box will be at centre of the screen saying what type of quiz to make
+             A user-friendly interface for creating quizzes, allowing users to add multiple-choice, true/false, and short-answer questions.-->
+        <input type="text" class="ProjectTitle" placeholder="Project Name :" pattern="[a-zA-Z0-9\s]+"
+        title="Only letters, numbers and spaces allowed">
+        <br>
+        <br>
+    <div class="create-slide">
+        <div class="draggable-box">This is dragable box</div>
+        <div class="question">
+            <h2 class="slide-SN">1.</h2>
+            <h2 class="quesiton-SN">What is the tallest grass?</h2>
+        </div>
+        <div class="answers">
+            i. Pine Tree
+            ii. Bamboo Tree
+            <br>
+            iii. Eculyptus Tree
+            iv. Money Plant
+            <br>
+        </div>
+        <!-- 
+        After Answering Question we can show the answer and also give description Facts on Answer or Topic like:- Panda feeds on the leaves and twig of bamboo.
+        -->
+        <div class="facts-des">
+            <h3>
+                Did you knew?
+            </h3>
+            <h4>
+                Panda feeds on the leaves and twig of bamboo.
+            </h4>
+        </div>
+        
+    </div>
+    <div class="add-new-slide">
+        +
+    </div>
+    <div class="create-slide">
+        <h2 class="slide-SN">2.</h2>
+        <input type="text" class="question" placeholder="Enter your Question" pattern="[a-zA-Z0-9\s]+"
+            title="Only letters, numbers and spaces allowed">
+        <div class="answers">
+            i.
+            <input type="text" class="answer-input" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+            ii.
+            <input type="text" class="answer-input" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+                <br>
+            iii.
+            <input type="text" class="answer-input" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+            iv.
+            <input type="text" class="answer-input" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+                <br>
+        </div>
+        <div class="facts-des">
+            <h3>
+                <input type="text-area" class="answer-input" placeholder="Did you knew?" pattern="[a-zA-Z0-9\s]+"
+            title="Only letters, numbers and spaces allowed">
+            </h3>
+            <h4>
+                <input type="text-area" class="answer-input" placeholder="Facts on Answer or Topic" pattern="[a-zA-Z0-9\s]+"
+            title="Only letters, numbers and spaces allowed">
+            </h4>
+        </div>
+        
+    </div>
+    <div class="add-new-slide">
+        +
+    </div>
+
+         </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const draggable = document.querySelector('.draggable-box');
+    const container = document.querySelector('.create-slide');
+
+    let isDragging = false;
+    let startX, startY, initialX, initialY;
+
+    draggable.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        initialX = draggable.offsetLeft;
+        initialY = draggable.offsetTop;
+
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    });
+
+    function onMouseMove(e) {
+        if (!isDragging) return;
+
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        let newX = initialX + dx;
+        let newY = initialY + dy;
+
+        // Prevent the draggable box from going outside the container
+        const rect = container.getBoundingClientRect();
+        const boxRect = draggable.getBoundingClientRect();
+
+        if (newX < 0) newX = 0;
+        if (newY < 0) newY = 0;
+        if (newX + boxRect.width > rect.width) newX = rect.width - boxRect.width;
+        if (newY + boxRect.height > rect.height) newY = rect.height - boxRect.height;
+
+        draggable.style.left = `${newX}px`;
+        draggable.style.top = `${newY}px`;
+    }
+
+    function onMouseUp() {
+        isDragging = false;
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    }
+});
+
+    </script>
+</body>
+
+</html>

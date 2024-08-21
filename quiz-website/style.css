@@ -1,0 +1,775 @@
+
+/* Imported cdn for icons from font-awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Light Mode (default) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a0dab;
+    --primary-color: #9cf6f6;
+    --yellow: #9cf6f6;
+    --darkred: #99221e;
+    --border: rgba(0, 0, 0, 0.3);
+    --scroll-col: green;
+    --scroll-hov: red;
+}
+/* Yellow-money/purchase red-danger Green-safe Blue-link */
+
+/* Dark Mode */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #bb86fc;
+    --primary-color: #bb86fc;
+    --yellow: #5abdbd;
+    --darkred: #661716;
+    --border: rgba(255, 255, 255, 0.3);
+    --scroll-col: green;
+    --scroll-hov: red;
+}
+
+/* Apply the colors */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li , ul{
+    list-style-type: none;
+}
+
+/* Call to Action Buttons Styles */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff6f61; /* Vibrant red-orange color */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.cta-button:hover {
+    background-color: #ff8a75; /* Lighter shade on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active Effects */
+.cta-button:active {
+    background-color: #ff5a50; /* Slightly darker when active */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Reset shadow */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Additional Styling */
+.cta-button span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.cta-button .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow Animation */
+.cta-button:hover .arrow {
+    transform: translateX(5px); /* Slight arrow move on hover */
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 100;
+    z-index: 100;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border);
+}
+.logo h3 img{
+    /* font-size: 12px;
+    font-weight: 900; */
+    height: 60px;
+    width: auto;
+}
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 400px;
+    
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--background-color);
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.search-button {
+    background-color: #007bff00;
+    border: none;
+    /* color: white; */
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    color: var(--text-color);
+    font-size: 20px;
+    /* font-weight: 100; */
+    transition: color 0.3s;
+}
+
+.search-button i:hover {
+    /* background-color: #0026ff2d; */
+    color: #9cf6f6;
+}
+.dark-mode #theme-toggle{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 16px;
+    /* background-color: red;
+    color: blue; */
+}
+
+.login-reg{
+    display: inline-flex;
+    background-color: #f0f0f0;
+    border-radius: 25px; /* Makes the edges rounded */
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.btn {
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded edges for the buttons */
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 900;
+    color: #333;
+}
+
+.btn.register {
+    background-color: white; /* Highlights the register button */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #e0e0e0; /* Adds a hover effect */
+    /* color: var(--background-color); Adds a hover effect
+    background-color: var(--text-color); */
+}
+.login-reg:hover {
+    background-color: transparent;
+    color: #333;/*
+    color: var(--background-color);  Adds a hover effect
+    background-color: var(--text-color); */
+}
+
+.btn.login {
+    /* background-color: var(--link-color);
+    color: var(--text-color); */
+    background-color: transparent;
+    color: #333;
+}
+
+.navbar-sec {
+    padding: 100px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar-sec a {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a:hover {
+    color: var(--link-color);
+}
+.hero {
+    padding: 100px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.hero-left, .hero-right {
+    flex: 1;
+    padding: 20px;
+}
+.hero-left {
+    background-color: var(--background-color);
+}
+.hero-left h3 {
+    font-size: 12px;
+    padding: 10px 0px 10px 8px;
+}
+.hero-right {
+    text-align: center;
+}
+.hero-right img {
+    height: 400px;
+    width: auto;
+}
+#categories {
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#title-nav {
+    font-size: 26px;
+    padding: 100px 50px 0px 50px;
+    width: 100%; /* Ensures the title spans the full width */
+    text-align: center; /* Centers the title horizontally (optional) */
+    margin-bottom: 30px; /* Adds some space between the title and the cards */
+}
+
+#categories .card {
+    display: inline-block;
+    background-color: var(--background-color); /* Light purple background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+    margin: 0 15px 30px 15px; /* Space between cards */
+}
+
+#categories .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+#categories .icon {
+    background-color: var(--background-color); /* White background for the icon */
+    border-radius: 50%; /* Rounded circle for the icon background */
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#categories .icon i {
+    font-size: 30px;
+}
+
+#categories .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a8a; /* Text color for title */
+    margin-bottom: 5px;
+}
+
+#categories .subtitle {
+    font-size: 14px;
+    color: #a0a0d0; /* Lighter color for subtitle */
+}
+
+/* Features Section */
+#features {
+    padding: 60px 20px;
+    background-color: var(--background-color); /* Light background for contrast */
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+#features h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background: var(--background-color); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 2rem;
+    color: #009688; /* Accent color */
+    margin-bottom: 20px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* About Us section */
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+} */
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about-us, #contact-us {
+    padding: 40px 20px;
+    margin: 0 auto;
+    /* max-width: 800px; */
+    background: var(--background-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-us-card, .contact-info {
+    margin-bottom: 20px;
+}
+
+.about-us-card h3, .contact-info h3, .about-values h3, .meet-team h3, .impact-about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #9cf6f6;
+}
+
+.about-us-card p, .contact-info p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.about-values ul, .meet-team ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values li, .meet-team li {
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: #99221e;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.call-to-action h3 {
+    margin: 0;
+}
+
+.go-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    filter: drop-shadow(1px 1px 5px green);
+    border-radius: 5px;
+    transition: filter 2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.go-up a {
+    display: block;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.go-up a img {
+    height: 26px;
+    width: auto;
+    transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.go-up a:hover img {
+    transform: scale(1.1);
+}
+
+.go-up:hover {
+    filter: drop-shadow(2px 2px 10px green);
+    transform: scale(1.05);
+}
+
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.contact-us-footer {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+/* Footer Container */
+.footer-container-horizontal {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 20px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    justify-content: space-around;
+}
+
+/* Footer Sections */
+.footer-section {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Ensure it stays readable on smaller screens */
+}
+
+/* Footer Links */
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: var(--background-color);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: var(--link-color);
+}
+
+/* Social Icons */
+.social-footer {
+    display: flex;
+}
+.social-footer a {
+    margin-right: 10px;
+    color: var(--link-color)
+}
+
+.social-footer a:hover {
+    color: var(--link-color);
+}
+
+/* Footer Legal Text */
+.footer-legal {
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    text-align: center;
+    font-size: 10px;
+    color: #ccc;
+}
+.footer-legal h3 {
+    font-size: 10px;
+}
+
+.footer-legal a {
+    color: var(--text-color);
+}
+
+.footer-legal a:hover {
+    color: var(--link-color);
+}
+
+/* Specific for Quiz Sectors */
+.quiz-sector-top {
+    display: flex;
+}
+.quiz-sector-top, .quiz-sector-bottom {
+    margin-bottom: 10px;
+}
+
+.quiz-sector-top a, .quiz-sector-bottom a {
+    margin-right: 10px;
+}
+
+
+
+
+/* DashBoard.html */
+/* better use frames to make the frame of navbar-top navbar-left and navbar-right maybe bottom also   */
+.navbar-third {
+    display: flex;
+}
+.navbar-third-right {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+    align-self: center;
+}
+.navbar-third-left {
+    padding: 100px 0px 100px 50px;
+}
+.navbar-third-left ul{
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+/* main */
+#dash-main {
+    display: flex;
+}
+
+
+.project-img {
+    padding: 40px;
+    border: 3px solid blue;
+    border-radius: 20px;
+}
+
+
+/* createslide */
+.createslide-main {
+    display: flex;
+}
+.create-slide {
+    padding: 0px 20px 20px 20px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.draggable-box {
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 0px 0px 16px 0px;
+    cursor: grab;
+}
+.draggable-box:hover {
+    background-color: rgba(75, 81, 244, 0.145);
+}
+.draggable:active {
+    cursor: grabbing;
+}
+.navbar-third {
+    width: 200px; /* Fixed width of 100px */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.slide2 {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+}
+main {
+    padding: 50px;
+    display: block;
+    justify-content: center;
+}
+.question {
+    display: flex;
+    font-size: 20px;
+}
+.add-new-slide {
+    display: inline-block;
+    padding: 4px 100px;
+    border: 3px solid rgb(0, 35, 101);
+}
+
+
+
+/* createslide */
+.createslide-main {
+    display: flex;
+}
+/* .create-slide {
+    padding: 20px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+} */
+.navbar-third {
+    width: 200px; /* Fixed width of 100px */
+    background-color: #f0f0f0;
+    padding: 20px;
+
+}
+.slide2 {
+    flex-grow: 1; /* Takes up the remaining space */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+
+
+
+
+/* Apply the colors */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+   
+    
+    --primary-links: #007BFF;
+    --primary-action : #FFC107;
+    --secondary-neutral : #FFFFFF;
+    --secondary-soft : #F4F4F4;
+    --secondary-strong: #333333;
+    --accent-hover : #87CEFA;
+    --accent-interactive : #FF6F61;
+    --text-primary : #000000;
+    --text-secondary : #555555;
+    --background-gentle : #E9ECEF;
+    --background-off-White : #F8F9FA;
+    --button-background : #007BFF;
+    --button-hover : #0056b3;
+    --button-text : #FFFFFF;
+    --button-active : #0056b3;
+    --sbutton-background : #FFC107;
+    --sbutton-hover : #FFA000;
+    --sbutton-text : #333333;
+    --sbutton-active : #e0a800;
+    --pbutton-shadow: rgba(0, 0, 0, 0.2);
+    --sbutton-shadow: rgba(0, 0, 0, 0.15);
+
+    --primary-links: #1E2A38;
+    --primary-action : #FFC107;
+    --secondary-neutral : #555555;
+    --secondary-soft : #333333;
+    --secondary-strong: #121212;
+    --accent-hover : #00BFFF;
+    --accent-interactive : #FF6F61;
+    --text-primary : #FFFFFF;
+    --text-secondary : #E0E0E0;
+    --background-gentle : #1C1C1C;
+    --background-off-White : #2C2C2C;
+    --button-background : #FFC107;
+    --button-hover : #FFA000;
+    --button-text : #121212;
+    --button-active : #e0a800;
+    --sbutton-background : #1E2A38;
+    --sbutton-hover : #00BFFF;
+    --sbutton-text : #FFFFFF;
+    --sbutton-active : #1a202c;
+    --pbutton-shadow: rgba(255, 255, 255, 0.1);
+    --sbutton-shadow: rgba(255, 255, 255, 0.05);
+    --yellow: #5abdbd;
+}
+
+a {
+    color: var(--link-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+
+
+
+ /* The scrollbar itself */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* The part of the scrollbar that moves (the thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-col); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid var(--scroll-col); /* Adds a border around the thumb */
+    transition: all 0.2s ease-in-out;
+}
+
+/* The track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: var(--background-color); /* Color of the track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.9);
+    background: var(--scroll-hov);
+    box-shadow: 0 0 5px var(--scroll-hov);
+    border: 3px solid var(--scroll-hov);
+    padding: 0px 2px;
+}

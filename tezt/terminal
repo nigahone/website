@@ -1,0 +1,4 @@
+git add .
+git commit -m "Made changes to index.html, added chad.html and style.css"
+git checkout main
+git merge temp-branch
