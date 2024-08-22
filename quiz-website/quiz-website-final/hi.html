@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Create | Update | Delete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h3>
+                        <img src="Quiz Master logo 500px.png" alt="logo of quiz master">
+                    </h3>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search..." pattern="[a-zA-Z0-9\s]+"
+                    title="Only letters, numbers and spaces allowed">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="dark-mode dmode">
+                <button id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            </div>
+            <div class="login-reg">
+                <button class="btn login">Login</button>
+                <button class="btn register">Register</button>
+            </div>
+        </div>
+
+        <div class="navbar-sec">
+            <ul class="nav-links">
+                <li>
+                    <a href="quiz.html">Start Quiz</a>
+                </li>
+                <li>
+                    <a href="codejoin.html">Quiz code</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">dashboard</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <main class="createslide-main createhead">
+        <div class="navbar-third-left">
+            <ul>
+                <li><a href="dashboard.html"><i class="fa-solid fa-sliders"></i>MySlides</a></li>
+            </ul>
+            <ul>
+                <li><a href="team.html"><i class="fa-solid fa-user-plus"></i>Team</a></li>
+            </ul>
+            <ul>
+                <li><a href="analytics.html"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+            </ul>
+            <ul>
+                <li><a href="tutorials.html"><i class="fa-solid fa-graduation-cap"></i>Tutorials</a></li>
+            </ul>
+            <br>
+            <ul>
+                <li><a href="integration.html">Integration:</a></li>
+            </ul>
+            <ul>
+                <li><a href="powerpoint.html"><i class="fa-solid fa-file-powerpoint"></i>Powerpoint</a></li>
+            </ul>
+            <ul>
+                <li><a href="googleSlides.html"><i class="fa-brands fa-slideshare"></i>GoogleSlides</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="slide2">
+            <div class="join">
+                <button>
+                    <a href="codejoin.html">Join Code</a>
+                </button>
+                <i class="fa-solid fa-arrow-rotate-left"> undo </i>
+                <button class="done" id="done-button"><i class="fa-solid fa-check"> done </i></button>
+                <i class="fa-solid fa-check"> done </i>
+                <i class="fa-solid fa-ellipsis-vertical"> options</i>
+                <i class="fa-solid fa-eye"> Preview</i>
+                <!-- Preview mode to test the quiz before publishing. 
+                 Also we may make the items dragable rather than adding + sign below every questions-->
+            </div>
+
+            <!-- on  clicking create a popup box appears and backgound blurs and the box will be at centre of the screen saying what type of quiz to make
+             A user-friendly interface for creating quizzes, allowing users to add multiple-choice, true/false, and short-answer questions.-->
+            <input type="text" class="ProjectTitle" placeholder="Project Name :" pattern="[a-zA-Z0-9\s]+"
+                title="Only letters, numbers and spaces allowed">
+            <br>
+            <br>
+            <div class="create-slide">
+                <div class="draggable-box">This is dragable box</div>
+                <div class="question">
+                    <h2 class="slide-SN">1.</h2>
+                    <h2 class="quesiton-SN">What is the tallest grass?</h2>
+                </div>
+                <div class="answers">
+                    i. Pine Tree
+                    ii. Bamboo Tree
+                    <br>
+                    iii. Eculyptus Tree
+                    iv. Money Plant
+                    <br>
+                </div>
+                <!-- 
+        After Answering Question we can show the answer and also give description Facts on Answer or Topic like:- Panda feeds on the leaves and twig of bamboo.
+        -->
+                <div class="facts-des">
+                    <h3>
+                        Did you knew?
+                    </h3>
+                    <h4>
+                        Panda feeds on the leaves and twig of bamboo.
+                    </h4>
+                </div>
+
+            </div>
+            <div class="add-new-slide">
+                +
+            </div>
+            <div class="create-slide">
+                <h2 class="slide-SN">2.</h2>
+                <textarea class="question" id="quiz-title-input" placeholder="Enter your Question" pattern="[a-zA-Z0-9\s]+"
+                    title="Only letters, numbers and spaces allowed"></textarea>
+                <div class="answers-1">
+                    i.
+                    <input type="text" class="answer-input-i" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                        title="Only letters, numbers and spaces allowed">
+                    ii.
+                    <input type="text" class="answer-input-ii" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                        title="Only letters, numbers and spaces allowed">
+
+
+                </div>
+                <div class="answers-2">
+                    iii.
+                    <input type="text" class="answer-input-iii" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                        title="Only letters, numbers and spaces allowed">
+                    iv.
+                    <input type="text" class="answer-input-iv" placeholder="Answer" pattern="[a-zA-Z0-9\s]+"
+                        title="Only letters, numbers and spaces allowed">
+
+                </div>
+                <div class="facts-des">
+                    <h3>
+                        Did you knew?
+                    </h3>
+                    <h4>
+                        <textarea class="facts-descipt" placeholder="Fun Facts or Description on Topic" pattern="[a-zA-Z0-9\s]+"
+                            title="Only letters, numbers and spaces allowed"></textarea>
+                            
+                    </h4>
+                </div>
+
+            </div>
+            
+            <div class="add-new-slide">
+                +
+            </div>
+            <div class="create-slide">
+                <div class="draggable-box">This is dragable box</div>
+                <div class="question">
+                    <h2 class="slide-SN">1.</h2>
+                    <h2 class="quesiton-Sn">What is the tallest grass?</h2>
+                </div>
+                <div class="answers">
+                    i. <h2 class="ans-i"></h2>
+                    ii. <h2 class="ans-ii"></h2>
+                    <br>
+                    iii.<h2 class="ans-iii"></h2>
+                    iv. <h2 class="ans-iv"></h2>
+                    <br>
+                </div>
+                <!-- 
+        After Answering Question we can show the answer and also give description Facts on Answer or Topic like:- Panda feeds on the leaves and twig of bamboo.
+        -->
+                <div class="facts-des">
+                    <h3>
+                        Did you knew?
+                    </h3>
+                    <h4 class="desh3">
+                        Panda feeds on the leaves and twig of bamboo.
+                    </h4>
+                </div>
+            </div>
+            <div id="question-container">
+                <!-- Existing questions will be here -->
+            </div>
+    </main>
+     <!-- Text area to input the title or question -->
+     <!-- <textarea id="quiz-title-input" placeholder="Enter Quiz Title"></textarea> -->
+    
+    <div class="slide2">
+        contents
+    </div>
+    <div id="tables-container">
+        <!-- New tables will be added here -->
+    </div>
+    <div id="slides-container"></div>
+
+    
+    <footer>
+
+    </footer>
+    <script>
+        document.getElementById('done-button').addEventListener('click', function () {
+    // Get the input from the text area
+    const questionText = document.getElementById('quiz-title-input').value;
+    const answerTexti = document.getElementsByClassName('answer-input-i')[0].value;
+    const answerTextii = document.getElementsByClassName('answer-input-ii')[0].value;
+    const answerTextiii = document.getElementsByClassName('answer-input-iii')[0].value;
+    const answerTextiv = document.getElementsByClassName('answer-input-iv')[0].value;
+    const factText = document.getElementsByClassName('fact-input')[0].value;
+
+    // Create a new slide div
+    const newSlide = document.createElement('div');
+    newSlide.classList.add('create-slide');
+
+    // Create the slide content using the existing format
+    newSlide.innerHTML = `
+        <div class="draggable-box">This is draggable box</div>
+        <div class="question">
+            <h2 class="slide-SN">1.</h2>
+            <h2 class="quesiton-Sn">${questionText}</h2>
+        </div>
+        <div class="answers">
+            i. <h2 class="ans-i">${answerTexti}</h2>
+            ii. <h2 class="ans-ii">${answerTextii}</h2>
+            <br>
+            iii. <h2 class="ans-iii">${answerTextiii}</h2>
+            iv. <h2 class="ans-iv">${answerTextiv}</h2>
+            <br>
+        </div>
+        <div class="facts-des">
+            <h3>Did you knew?</h3>
+            <h4 class="desh3">${factText}</h4>
+        </div>
+    `;
+
+    // Append the new slide to the container
+    document.getElementById('slides-container').appendChild(newSlide);
+
+    // Clear the input fields after appending
+    document.getElementById('quiz-title-input').value = '';
+    document.getElementsByClassName('answer-input-i')[0].value = '';
+    document.getElementsByClassName('answer-input-ii')[0].value = '';
+    document.getElementsByClassName('answer-input-iii')[0].value = '';
+    document.getElementsByClassName('answer-input-iv')[0].value = '';
+    document.getElementsByClassName('fact-input')[0].value = '';
+});
+
+
+    //     document.addEventListener('DOMContentLoaded', () => {
+    // const questionContainer = document.getElementById('question-container');
+    // const doneButton = document.getElementById('done-button'); // Use ID selector
+
+    // doneButton.addEventListener('click', () => {
+    //     console.log('Done button clicked!'); // For debugging
+
+    //     // Create a new question slide
+    //     const newQuestionSlide = document.createElement('div');
+    //     newQuestionSlide.classList.add('create-slide');
+        
+    //     // Question number
+    //     const questionNumber = questionContainer.children.length + 1;
+    //     const slideSN = document.createElement('h2');
+    //     slideSN.classList.add('slide-SN');
+    //     slideSN.innerText = `${questionNumber}.`;
+
+    //     // Question input
+    //     const questionInput = document.createElement('textarea');
+    //     questionInput.classList.add('question');
+    //     questionInput.setAttribute('placeholder', 'Enter your Question');
+    //     questionInput.setAttribute('pattern', '[a-zA-Z0-9\\s]+');
+    //     questionInput.setAttribute('title', 'Only letters, numbers, and spaces allowed');
+
+    //     // Answer inputs
+    //     const answers1 = document.createElement('div');
+    //     answers1.classList.add('answers-1');
+    //     for (let i = 1; i <= 2; i++) {
+    //         const answerLabel = document.createElement('span');
+    //         answerLabel.innerText = `${['i', 'ii'][i - 1]}. `;
+    //         const answerInput = document.createElement('input');
+    //         answerInput.classList.add('answer-input');
+    //         answerInput.setAttribute('type', 'text');
+    //         answerInput.setAttribute('placeholder', 'Answer');
+    //         answerInput.setAttribute('pattern', '[a-zA-Z0-9\\s]+');
+    //         answerInput.setAttribute('title', 'Only letters, numbers, and spaces allowed');
+    //         answers1.appendChild(answerLabel);
+    //         answers1.appendChild(answerInput);
+    //     }
+
+    //     const answers2 = document.createElement('div');
+    //     answers2.classList.add('answers-2');
+    //     for (let i = 3; i <= 4; i++) {
+    //         const answerLabel = document.createElement('span');
+    //         answerLabel.innerText = `${['iii', 'iv'][i - 3]}. `;
+    //         const answerInput = document.createElement('input');
+    //         answerInput.classList.add('answer-input');
+    //         answerInput.setAttribute('type', 'text');
+    //         answerInput.setAttribute('placeholder', 'Answer');
+    //         answerInput.setAttribute('pattern', '[a-zA-Z0-9\\s]+');
+    //         answerInput.setAttribute('title', 'Only letters, numbers, and spaces allowed');
+    //         answers2.appendChild(answerLabel);
+    //         answers2.appendChild(answerInput);
+    //     }
+
+    //     // Facts description
+    //     const factsDes = document.createElement('div');
+    //     factsDes.classList.add('facts-des');
+    //     const didYouKnow = document.createElement('h3');
+    //     didYouKnow.innerText = 'Did you knew?';
+    //     const factText = document.createElement('textarea');
+    //     factText.classList.add('question');
+    //     factText.setAttribute('placeholder', 'Enter your Fact');
+    //     factText.setAttribute('pattern', '[a-zA-Z0-9\\s]+');
+    //     factText.setAttribute('title', 'Only letters, numbers, and spaces allowed');
+    //     factsDes.appendChild(didYouKnow);
+    //     factsDes.appendChild(factText);
+
+    //     // Append everything to the new question slide
+    //     newQuestionSlide.appendChild(slideSN);
+    //     newQuestionSlide.appendChild(questionInput);
+    //     newQuestionSlide.appendChild(answers1);
+    //     newQuestionSlide.appendChild(answers2);
+    //     newQuestionSlide.appendChild(factsDes);
+
+    //     // Add the new question slide to the container
+    //     questionContainer.appendChild(newQuestionSlide);
+    // });
+// });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
